@@ -1,0 +1,40 @@
+import java.util.Scanner;
+class Apojittringle
+{
+	public static void main(String arg[])
+	{
+		Scanner sc= new Scanner (System.in);
+		int i,j;
+		int a[][]=new int [10][10];
+		System.out.println("enter two size ");
+			int n=sc.nextInt();
+			int m=sc.nextInt();                     
+			System.out.println("enter  first element\n ");
+			 if(n==m)                                     
+			 {                             				 
+				for( i=0;i<n;i++)                           
+				{
+					for(j=0 ; j<m ; j++)
+					{
+					
+					 a[i][j]=sc.nextInt();
+					}
+				}
+					System.out.print("\ttringle\n");
+					for(i=0;i<n;i++)
+					{
+						for(j=0 ; j<m; j++)
+						{	
+							if(j>=i&&j<=n)
+							System.out.print(a[i][j]);
+							else
+							System.out.print(" ");
+						}
+							System.out.println();
+					}
+					
+			 }
+			 else
+			 System.out.println("can not finde upertranguler matrix");
+	}
+}

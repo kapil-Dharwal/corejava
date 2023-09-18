@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class SumNatural
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Entyer any number:");
+		int n=sc.nextInt();
+		int i=1;
+		int sum=0;
+		while(i<=n)
+		{
+			sum=sum+i;
+			i++;
+		}
+            System.out.println("sum= "+sum);
+		
+	}
+}	
